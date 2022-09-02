@@ -10,7 +10,7 @@ export default function Header() {
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;
-  const twitterHandle = "@GorvGoyl";
+  const twitterHandle = "@gonzalogiudicedjs";
   const siteName = "gonzalogiudicedjs.com";
 
   return (
@@ -29,7 +29,7 @@ export default function Header() {
             url: ogImageURL,
             width: 1200,
             height: 630,
-            alt: "Gonzalo Giudice DJs - Sitio personal",
+            alt: "Gonzalo Giudice DJs - Contacto",
           },
         ],
         site_name: siteName,
@@ -48,7 +48,7 @@ export default function Header() {
       additionalLinkTags={[
         {
           rel: "icon",
-          href: `${siteURL}/favicon.ico`,
+          href: `${siteURL}/favicon.svg`,
         },
         // {
         //   rel: "manifest",
