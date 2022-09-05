@@ -25,13 +25,13 @@ const Footer = () => {
       </div>
       <a href="https://www.instagram.com/gonzalogiudicedjs/?hl=es" target="_blank" rel="noopener noreferrer" className="text-primary-gray text-lg">@gonzalogiudicedjs</a>
 
-      <div className="flex mx-auto py-4">
+      {/* <div className="flex mx-auto py-4">
         <a href="tel:+541154291574" target="_blank" rel="noopener noreferrer"
           className="uppercase bg-primary-black hover:bg-primary-blue tracking-widest border-2 border-primary-blue w-44 active:bg-primary-blue focus-visible:ring ring-primary-blue-hover text-primary-gray2 text-base rounded-md outline-none transition duration-100 px-10 py-3">
           Llamanos
         </a>
+      </div> */}
 
-      </div>
       <a href="mailto:info@gonzalogiudice.com.ar" target="_blank" rel="noopener noreferrer" className="text-primary-white text-lg">info@gonzalogiudice.com.ar</a>
 
     </footer>

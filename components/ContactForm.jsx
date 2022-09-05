@@ -160,7 +160,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-3 mx-auto max-w-lg py-3">
           <button
             type="submit"
-            className="bg-primary-blue hover:bg-primary-gray w-32 active:bg-primary-blue focus:ring rounded outline-none ring-primary-blue-hover text-primary-white text-lg rounded-2xl outline-none transition duration-100 px-8 py-2">
+            className="bg-primary-blue hover:bg-primary-black hover:border hover:border-primary-blue w-32 active:bg-primary-blue focus:ring rounded outline-none ring-primary-blue-hover text-primary-white text-lg rounded-2xl outline-none transition duration-100 px-8 py-2">
             Enviar
           </button>
         </div>
