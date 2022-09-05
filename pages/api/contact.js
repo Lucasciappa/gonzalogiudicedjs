@@ -18,16 +18,16 @@ export default function (req, res) {
         text: req.body.message + " | Sent from: " + req.body.email,
         html: `
         <div>Consulta de disponibilidad</div>
-        <p>Nombre:${req.body.name}</p>
+        <p>Nombre: ${req.body.name}</p>
         <div>
-        <p>Día:${req.body.dia}</p>
-        <p>Mes:${req.body.mes}</p>
-        <p>Año:${req.body.anio}</p>
+        <p>Día: ${req.body.dia}</p>
+        <p>Mes: ${req.body.mes}</p>
+        <p>Año: ${req.body.anio}</p>
         </div>
         <div>
-        <p>Salón:${req.body.evento}</p>
-        <p>Cantidad de invitados:${req.body.personas}</p>
-        <p>Teléfono de contacto:${req.body.phone}</p>
+        <p>Salón: ${req.body.evento}</p>
+        <p>Cantidad de invitados: ${req.body.personas}</p>
+        <p>Teléfono de contacto: ${req.body.phone}</p>
         </div>
         <div>Mensaje: ${req.body.message}</div>
         <p>Sent from: ${req.body.email}</p>
