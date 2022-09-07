@@ -106,7 +106,7 @@ export const useFormControl = () => {
                     if (res.status === 200) {
                         Swal.fire({
                             title: '¡Mensaje enviado!',
-                            text: '¡Muchas gracias por escribirnos!',
+                            text: '¡¡Muchas gracias por escribirnos!!',
                             icon: 'success',
                             showConfirmButton: false,
                             timer: 1500,
