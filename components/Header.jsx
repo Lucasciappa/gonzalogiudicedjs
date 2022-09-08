@@ -3,15 +3,13 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const title = "Gonzalo Giudice DJ";
-  const desc =
-    "I'm a tech founder, digital nomad, and a fun guy to hang around with. I like to build things that others find helpful.";
+  const desc = "¿Estás organizando un evento y necesitás que alguien se ocupe de ponerle música?";
   const ogImgRelativePath = "/og.jpg";
-  const siteURL = "https://gonzalogiudicedjs.com";
+  const siteURL = "https://gonzalogiudicedjs.com.ar";
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;
-  const twitterHandle = "@gonzalogiudicedjs";
-  const siteName = "gonzalogiudicedjs.com";
+  const siteName = "gonzalogiudicedjs.com.ar";
 
   return (
     <NextSeo
@@ -34,11 +32,6 @@ export default function Header() {
         ],
         site_name: siteName,
       }}
-      twitter={{
-        handle: twitterHandle,
-        site: twitterHandle,
-        cardType: "summary_large_image",
-      }}
       additionalMetaTags={[
         {
           property: "author",
@@ -50,10 +43,6 @@ export default function Header() {
           rel: "icon",
           href: `${siteURL}/favicon.svg`,
         },
-        // {
-        //   rel: "manifest",
-        //   href: "/site.manifest",
-        // },
       ]}
     />
   );
