@@ -90,7 +90,7 @@ export const useFormControl = () => {
                 message: values.message
             }
 
-            console.log(data);
+            // console.log(data);
 
             fetch('/api/contact', {
                 method: 'POST',
@@ -100,13 +100,13 @@ export const useFormControl = () => {
                 },
                 body: JSON.stringify(data)
             }).then((res) => {
-                console.log(res);
+                // console.log(res);
                 setIsLoading(true);
                 setTimeout(() => {
                     if (res.status === 200) {
                         Swal.fire({
                             title: '¡Mensaje enviado!',
-                            text: '¡Muchas gracias por escribirnos a lucasciappa@gmail.com!',
+                            text: '¡Muchas gracias por escribirnos!',
                             icon: 'success',
                             showConfirmButton: false,
                             timer: 1500,
@@ -131,8 +131,8 @@ export const useFormControl = () => {
             fieldValues.message &&
             Object.values(errors).every((x) => x === "");
 
-            console.log(isValid);
-            console.log(errors);
+            // console.log(isValid);
+            // console.log(errors);
 
         return isValid;
     };

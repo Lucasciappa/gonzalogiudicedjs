@@ -35,8 +35,6 @@ export default async function (req, res) {
     }
     try {
        let resp =  await transporter.sendMail(mailData)
-       console.log(resp);
-     
         return res.status(200).json({
             ok: true,
             msg: 'ok',
