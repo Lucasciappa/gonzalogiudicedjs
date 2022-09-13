@@ -34,11 +34,13 @@ export default async function (req, res) {
         `
     }
     try {
-        await transporter.sendMail(mailData)
+       let resp =  await transporter.sendMail(mailData)
+       console.log(resp);
+     
         return res.status(200).json({
             ok: true,
             msg: 'ok',
-            body: info
+            body: resp
         })
     } catch (error) {
         console.log(error)
