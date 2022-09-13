@@ -34,12 +34,14 @@ export default function (req, res) {
         `
     }
     transporter.sendMail(mailData, function (err, info) {
-        if (err)
+        if (err){
             console.log(err)
+            res.send(err)
+        }
         else
             console.log(info)
     })
 
     res.status(200)
-    res.send('success')
+    console.log(err)
 }
